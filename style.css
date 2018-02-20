@@ -1,3 +1,6 @@
+body{
+	font-family: open sans;
+}
 header{
 	box-shadow: 1px 1px #888888;
 	position: fixed !important;
@@ -90,8 +93,9 @@ a.btn-more{
 .sectionFront{
 	font-family: open Sans;
 	background-repeat: no-repeat;
-	background-size: cover;
 	padding: 40px 5px;
+	background-size: cover;
+	max-height: 800px;
 }
 #section3{
 	background-image: url("/img/front3.png");
@@ -217,21 +221,14 @@ div.third{
 	min-height: 600px;
 	overflow: hidden;
 	position: relative;
+	background-size: cover;
+  	background-image: url("/img/_84I1382-sh.jpg");
 }
-.ill-container::after{
-  	content: " ";
-  	position: absolute;
-  	top: 0;
-  	right: 0;
-  	bottom: 0;
-  	left: 0;
-  	background-image: url("/img/search.jpg");
-  	background-size: 100%;
-  	z-index: -1;
-  	transform: translateZ(-1px);
-}
-.ill-container.assesment::after{
+.ill-container.assesment{
 	background-image: url("/img/assesment.jpg");
+}
+.ill-container.udvikling{
+	background-image: url("/img/_84I1396-sh.jpg");
 }
 .circle {
 	background: #c1c0c0;
@@ -261,6 +258,7 @@ div.third{
 	opacity: 0.6;
 }
 div.centerImage{
+	cursor: pointer;
 	background-image: url("/img/center.jpg");
 }
 .assesment div{
@@ -280,23 +278,40 @@ div.centerImage{
 	color: #d5d5d5;
 }
 div.individualImage{
+	cursor: pointer;
 	background-image:url("/img/individual.jpg");
 }
 #textSection{
 	padding: 40px;
+	font-size: 22px;
+	font-weight: 500;
+}
+.blog-sidebar img{
+	width: 100%;
+}
+.text-section{
+	padding: 50px;
+	border-top: 1px solid #d5d5d5;
+	background: #FFF;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.text-section h2 {
+	color: #6699cc;
+}
+.text-section p{
+	font-size: 20px;
+	font-family: open sans;
+
+}
+.text-section li{
+	font-size: 20px;
+	font-family: open sans;
+
 }
 footer{
 	background: #a99b91;
 }
-footer p{
+footer address{
 	font-size: 20px;
-}
-footer .left{
-	padding: 40px;
-}
-footer ul {
-	list-style-type: none;
-}
-footer ul li{
-	font-family: Open Sans;
 }

@@ -3,7 +3,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Questrial|Roboto|Work+Sans:300,400,500,600,700,800,900" rel="stylesheet">
 		<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="/style.css" rel="stylesheet">
-		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>	
+		<script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				console.log("DOCUMENT IS READY");
@@ -44,15 +45,15 @@
 				<div class="col-md-11 mx-auto menu">
 					<ul>
 						<li class="first"><a href="search.html">Search</a></li>
-						<li><a href="Udvikling.html">Udvikling</a></li>
-						<li><a href="Assesment.html">Assesment</a></li>
-						<li><a href="Cases.html">Cases</a></li>
+						<li><a href="udvikling.html">Udvikling</a></li>
+						<li><a href="assesment.html">Assesment</a></li>
+						<li><a href="cases.html">Cases</a></li>
 						<li><a href="team.html">Mød Os</a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
-		<div class="col-md-12 ill-container">
+		<div class="col-md-12 ill-container" data-stellar-background-ratio="0.5">
 			<h1 class="title">Search</h1>
 
 		</div>
@@ -137,20 +138,22 @@ kandidaten.</p>
 			</div>
 		</div>
 		<footer>
-			<div class="row">
-			<div class="col-md-4 offset-md-2 left">
-				<h2> Kom og mød os</h2>
-				<p><b>momentum consulting</b></p>
-				<p>Kalkbrænderiløbskaj 6,<br/> 2100 København Ø</p>
-				<p>Tlf. 39 40 39 88</p> 
-				<p><a href="mailto:info@momentumconsulting.dk">info@momentumconsulting.dk</a></p>
-				</ul> 
-			</div>
-			<div class="col-md-4 left">
-				<iframe width="450" height="300" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr5U31OxSUkYRyVuVC6JuBgU&key=AIzaSyDmyg0UztLXPG3_6m-cOxrkE0JwLlCM4aA	" allowfullscreen></iframe>
-			</div>
-		</div>
-		</footer>	
+      <div class="row">
+        <div class="col-md-8">
+          <iframe width="100%" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.5933416132607!2d12.589587116273268!3d55.713440080542924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465252ecd43795af%3A0x5066ea20b955bc9!2zS2Fsa2Jyw6ZuZGVyaWzDuGJza2FqIDYsIDIxMDAgS8O4YmVuaGF2biDDmA!5e0!3m2!1sen!2sdk!4v1518277610874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      
+        <div class="col-md-4">
+          <br/>
+        <h2>Momentum Consulting</h2>
+        <address>
+          Kalkbrænderiløbskaj 6<br>
+          2100 København Ø<br>
+          Tlf. 39 40 39 88<br>
+          <a href="mailto:info@momentumconsulting.dk">info@momentumconsulting.dk</a><br>
+        </address>
+      </div>
+    </div>
+    </footer> 	
 	</body>
 </html>

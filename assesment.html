@@ -4,32 +4,16 @@
 		<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="/style.css" rel="stylesheet">
 		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				console.log("DOCUMENT IS READY");
-				$('.step1').click(function(){
-					$('.active').removeClass('active');
-					$('.step1').addClass('active');
+				$('.individualImage').click(function(){
+					$('#assesment').slideToggle();
+					$(document).scrollTop( $("#assesment").offset().top )
 				});
-				$('.step2').click(function(){
-					$('.active').removeClass('active');
-					$('.step2').addClass('active');
-				});
-				$('.step3').click(function(){
-					$('.active').removeClass('active');
-					$('.step3').addClass('active');
-				});
-				$('.step4').click(function(){
-					$('.active').removeClass('active');
-					$('.step4').addClass('active');
-				});
-				$('.step5').click(function(){
-					$('.active').removeClass('active');
-					$('.step5').addClass('active');
-				});
-				$('.step6').click(function(){
-					$('.active').removeClass('active');
-					$('.step6').addClass('active');
+				$('.centerImage').click(function(){
+					$('#assesmentCenter').slideToggle();
+					$(document).scrollTop( $("#assesmentCenter").offset().top )
 				});
 			});
 		</script>
@@ -44,9 +28,9 @@
 				<div class="col-md-11 mx-auto menu">
 					<ul>
 						<li class="first"><a href="search.html">Search</a></li>
-						<li><a href="Udvikling.html">Udvikling</a></li>
+						<li><a href="udvikling.html">Udvikling</a></li>
 						<li><a href="assesment.html">Assesment</a></li>
-						<li><a href="Cases.html">Cases</a></li>
+						<li><a href="cases.html">Cases</a></li>
 						<li><a href="team.html">Mød Os</a></li>
 					</ul>
 				</div>
@@ -74,30 +58,91 @@ og ved gennemførelse af større processer, såkaldte Assessment Centre.</p>
 		</div>
 		<div class="row assesment">
 			<div class="col-md-4 offset-md-2 centerImage">
-				<a href="#assesmentCenter"><h2 class="center">Assesment Center</h2></a>
+				<h2 class="center">Assesment Center</h2>
 			</div>
-			<div class="col-md-4 individualImage"><a href="#individualAssesment"><h2 class="center">Individual Assessment</h2></a></div>
+			<div class="col-md-4 individualImage"><h2 class="center">Individual Assessment</h2></div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
 
 			</div>
 		</div>
+		<div class="row text-section" id="assesment" style="display:none;">
+      <div class="blog-post col-md-10 mx-auto">
+            <h2 class="blog-post-title">Individuel assessment</h2>
+
+            <p>Et individuelt assessmentforløb kan anvendes ved rekruttering og udvikling af ledere og
+medarbejdere. Forløbet vil hurtigt og effektivt afdække deltagerens væsentligste styrker, potentiale,
+udviklingsområder og begrænsninger i forhold til en given stilling. I en tæt dialog med vores kunde
+foretager vi en struktureret afdækning af de vigtigste kompetencer og gennemfører herefter forløbet
+med fokus på netop disse kompetencer.</p>
+            <p>Et assessmentforløb er typisk bygget op omkring et grundigt og kompetencebaseret interview, der
+er baseret på relevante testresultater såsom personlighedstest, færdighedstest samt eksekverings- og
+simuleringsøvelser. Endvidere kan der indgå feedback fra andre, eksempelvis via referencer eller
+struktureret 360° feedback. Endelig lægger vi stor vægt på at sikre, at deltageren får en grundig og
+brugbar feedback på forløbet.</p>
+            <p>Hos Momentum Consulting baserer vi vores arbejde på fire kvalitetsgrundpiller:
+            	<ul>
+					<li>Vi leverer ydelser med høj faglig kvalitet. Alle konsulenter har mange års erfaring
+med assessmentopgaver samt relevant akademisk baggrund fra psykologien.</li>
+					<li>Vi tager udgangspunkt i kundens situation, værdier og behov i sammensætningen af et
+forløb, der fokuserer på de vigtigste kompetencer i forhold til jobbet.</li>
+					<li>Vi udviser respekt for kandidaten og gennemfører en transparent og åben proces, hvor der
+lægges stor vægt på at give kandidaten en brugbar feedback.</li>
+					<li>Vi er certificerede brugere af værktøjer fra anerkendte testudbydere, der lever op til de
+højeste kvalitetskrav på markedet.</li>
+				</ul>
+            </p>
+      </div><!-- /.blog-post -->
+    </div>
+    <div class="row text-section" id="assesmentCenter" style="display:none;">
+      <div class="blog-post col-md-10 mx-auto">
+      	<h2 class="blog-post-title">Assessment Center</h2>
+            <p>Et Assessment Center kan anvendes ved større rekrutteringsprocesser i forbindelse med
+talentvurdering og større udviklingsforløb. Assessment Centeret er et afgørende værktøj i
+forbindelse med management audits, ved sammenlægning af forretningsenheder eller
+virksomhedsfusioner. Via en struktureret og varieret vurderingsproces, kan der hurtigt og effektivt
+skabes indsigt i de forskellige lederes væsentligste styrker, potentialer, udviklingsområder og
+begrænsninger.</p>
+            <p>Grundighed er nøgleordet, når der skal etableres et Assessment Center med høj kvalitet. I et
+omhyggeligt og tæt samarbejde med vores kunde udarbejder vi en detaljeret kompetenceoversigt,
+hvorefter vi opbygger et Assessment Center med brug af forskellige metoder og værktøjer.</p>
+            <p>Et Assessment Center er typisk bygget op omkring praktiske teamøvelser, individuelle øvelser,
+rollespil, analytiske tests, personprofiler, samt et eller flere personlige interviews. Forløbet
+afsluttes med en skriftlig rapport, der suppleres med mundtlig feedback til deltager og kunde.</p>
+			<p>Hos Momentum Consulting baserer vi vores arbejde på fire kvalitetsgrundpiller:
+				<ul>
+					<li>Vi leverer ydelser med høj faglig kvalitet. Alle konsulenter har mange års erfaring
+med assessmentopgaver samt relevant akademisk baggrund fra psykologien.</li>
+					<li>Vi tager udgangspunkt i kundens situation, værdier og behov i sammensætningen af et
+forløb, der fokuserer på de vigtigste kompetencer i forhold til jobbet.</li>
+					<li>Vi udviser respekt for kandidaten og gennemfører en transparent og åben proces, hvor der
+lægges stor vægt på at give kandidaten en brugbar feedback.</li>
+					<li>Vi er certificerede brugere af værktøjer fra anerkendte testudbydere, der lever op til de
+højeste kvalitetskrav på markedet.</li>
+				</ul>
+			</p>
+            
+			
+      </div><!-- /.blog-post -->
+    </div>
 		<footer>
-			<div class="row">
-			<div class="col-md-4 offset-md-2 left">
-				<h2> Kom og mød os</h2>
-				<p><b>momentum consulting</b></p>
-				<p>Kalkbrænderiløbskaj 6,<br/> 2100 København Ø</p>
-				<p>Tlf. 39 40 39 88</p> 
-				<p><a href="mailto:info@momentumconsulting.dk">info@momentumconsulting.dk</a></p>
-				</ul> 
-			</div>
-			<div class="col-md-4 left">
-				<iframe width="450" height="300" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr5U31OxSUkYRyVuVC6JuBgU&key=AIzaSyDmyg0UztLXPG3_6m-cOxrkE0JwLlCM4aA	" allowfullscreen></iframe>
-			</div>
-		</div>
-		</footer>	
+      <div class="row">
+        <div class="col-md-8">
+          <iframe width="100%" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.5933416132607!2d12.589587116273268!3d55.713440080542924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465252ecd43795af%3A0x5066ea20b955bc9!2zS2Fsa2Jyw6ZuZGVyaWzDuGJza2FqIDYsIDIxMDAgS8O4YmVuaGF2biDDmA!5e0!3m2!1sen!2sdk!4v1518277610874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      
+        <div class="col-md-4">
+          <br/>
+        <h2>Momentum Consulting</h2>
+        <address>
+          Kalkbrænderiløbskaj 6<br>
+          2100 København Ø<br>
+          Tlf. 39 40 39 88<br>
+          <a href="mailto:info@momentumconsulting.dk">info@momentumconsulting.dk</a><br>
+        </address>
+      </div>
+    </div>
+    </footer> 	
 	</body>
 </html>
