@@ -8,12 +8,12 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('.individualImage').click(function(){
+					$('#assesmentCenter').hide();
 					$('#assesment').slideToggle();
-					$(document).scrollTop( $("#assesment").offset().top )
 				});
 				$('.centerImage').click(function(){
+					$('#assesment').slideToggle();
 					$('#assesmentCenter').slideToggle();
-					$(document).scrollTop( $("#assesmentCenter").offset().top )
 				});
 			});
 		</script>
