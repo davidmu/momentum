@@ -8,10 +8,12 @@
 		<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$.stellar({
-                	horizontalScrolling: false,
-                	verticalOffset: 0
-            	});
+				if($(document).width()>1000){
+					$.stellar({
+                		horizontalScrolling: false,
+                		verticalOffset: 0
+            		});
+				}
 		 	});
 		</script>
 		<meta charset="UTF-8">
@@ -59,7 +61,7 @@
    					<source src="img/nordhavn.mp4" type="video/mp4">
    					<source src="img/nordhavn.webm" type="video/webm">
 				</video>
-				<div class="">
+				<div class="AssetContainer">
 					<h1 class="title">MOMENTUM CONSULTING</h1>
 					<a class="movieBtn" href="#section2"><nobr>SE MERE HER</nobr></a>
 				</div>
