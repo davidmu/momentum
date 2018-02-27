@@ -1,10 +1,11 @@
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Questrial|Roboto|Work+Sans:300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald|Questrial|Roboto|Work+Sans:300,400,500,600,700,800,900" rel="stylesheet">
 		<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="/style.css" rel="stylesheet">
 		<script src="/bower_components/jquery/dist/jquery.js"></script>
 		<script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$.stellar({
@@ -18,33 +19,50 @@
 	<body>
 		<header class="col-md-12">
 			<div class="row">
-				<div class="col-md-1">
+				<div class="col-md-12 mx-auto menu">
+					<nav class="navbar navbar-expand-md navbar-light bg-faded">
 					<a href="/">
 						<img class="logo" src="img/logo.png" />
 					</a>
-				</div>
-				<div class="col-md-11 mx-auto menu">
-					<ul>
-						<li class="first"><a href="search.html">Search</a></li>
-						<li><a href="udvikling.html">Udvikling</a></li>
-						<li><a href="assesment.html">Assesment</a></li>
-						<li><a href="cases.html">Cases</a></li>
-						<li><a href="team.html">Mød Os</a></li>
-					</ul>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+
+<!-- Brand -->
+
+<!-- Links -->
+	<div class="collapse navbar-collapse" id="nav-content">   
+	<ul class="navbar-nav">
+	<li class="nav-item">
+	<a class="nav-link" href="search.html">Search</a>
+	</li>
+	<li class="nav-item active">
+	<a class="nav-link" href="udvikling.html">Udvikling</a>
+	</li>
+	<li class="nav-item">
+	<a class="nav-link" href="assesment.html">Assesment</a>
+	</li>
+	<li class="nav-item">
+	<a class="nav-link" href="cases.html">Cases</a>
+	</li>
+	<li class="nav-item">
+	<a class="nav-link" href="team.html">Mød Os</a>
+	</li>
+	</ul>
+				</nav>
 				</div>
 			</div>
 		</header>
 		<div class="row" >
 		<div class="col-md-12 video-container">
-				<div class="assets">
-					<h1 class="title">MOMENTUM CONSULTING</h1>
-					<a class="movieBtn" href="#section1"><nobr>SE MERE HER</nobr></a>
-					<img src="img/dots.png" />
-				</div>
-				<video class="video col-md-12" autoplay poster="transparent.png">
+				<video class="video col-md-12" autoplay loop poster="transparent.png">
    					<source src="img/nordhavn.mp4" type="video/mp4">
    					<source src="img/nordhavn.webm" type="video/webm">
 				</video>
+				<div class="">
+					<h1 class="title">MOMENTUM CONSULTING</h1>
+					<a class="movieBtn" href="#section2"><nobr>SE MERE HER</nobr></a>
+				</div>
 		</div>
 		</div>
 		<div class="row" id="blueSection">
@@ -55,13 +73,12 @@
 baseret på omfattende knowhow og gensidig dialog med vores kunder. <h4>
 					<span class="line"></span><h4 class="blue-text">Momentum Consulting blev i 2012 kåret som 
 gazelle-virksomhed af Dagbladet Børsen.</h4>
-					<a class="btn-more" href="#section1">Læs mere</a>
 				</div>
 			</div>
 			<div class="row sectionFront parralax" id="section2" data-stellar-background-ratio="0.5">
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-md-4 offset-md-1 text">
+						<div class="col-xl-4 col-lg-6 col-md-12 offset-lg-5 offset-xl-7 text">
 							<h5>SEARCH</h5>
 							<p>
 								Vi er erfarne konsulenter, der kender markedet og 
@@ -74,8 +91,8 @@ Dengang som nu, bestræber vi os altid på, at benytte klare og entydige process
 erfarne konsulenter er vi i stand til at udvikle og 
 tilpasse os i takt med de organisationer vi arbejder i. Vi har taget de bedste erfaringer med og fokuserer konstant på at gøre det endnu bedre!</p>
 						</div>
-						<div class="col-md-1 offset-md-6">
-							<p class="blue-right">SEARCH</p>
+						<div class="">
+							<a href="search.html"><p class="blue-left">SEARCH</p></a>
 						</div>
 				</div>
 				</div>
@@ -83,11 +100,11 @@ tilpasse os i takt med de organisationer vi arbejder i. Vi har taget de bedste e
 			<div class="row sectionFront" id="section1" data-stellar-background-ratio="0.5">
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-md-1">
-							<p class="blue-left">UDVIKLING</p>
+						<div class="">
+							<p class="blue-right">UDVIKLING</p>
 						</div>
-						<div class="col-md-4 offset-md-6 text">
-							<h5>UDVIKLING</h5>
+						<div class="col-xl-4 col-lg-6 col-md-12 offset-lg-1 offset-xl-1 text">
+							<a href="udvikling.html"><h5>UDVIKLING</h5></a>
 							<p>
 								Med blandingen af forretningsorienterede psykologer og erfarne projektkonsulenter er vi i stand til at gå et spadestik dybere i din organisationsudvikling helt fra toplederniveau til den enkelte medarbejder.  
 							</p>
@@ -106,8 +123,8 @@ tilpasse os i takt med de organisationer vi arbejder i. Vi har taget de bedste e
 			<div class="row sectionFront parralax" id="section3" data-stellar-background-ratio="0.5">
 				<div class="col-md-12">
 				<div class="row">
-					<div class="col-md-4 offset-md-1 text">
-						<h5>ASSESSMENT</h5>
+					<div class="col-xl-4 col-lg-6 col-md-12 offset-lg-5 offset-xl-7 text">
+						<a href="assesment.html"><h5>ASSESSMENT</h5></a>
 						<p>
 							Vurdering og bedømmelse af ledere og medarbejdere er en altafgørende del af rekrutterings-og udviklingsprocesser for virksomheder og organisationer.
 						</p>
@@ -118,8 +135,8 @@ tilpasse os i takt med de organisationer vi arbejder i. Vi har taget de bedste e
 							Momentum Consulting har omfattende national og international erfaring med at gennemføre professionelle og målrettede assessmentforløb, der anvendes både ved vurdering af enkeltpersoner og ved gennemførelse af større processer, såkaldte Assessment Centre. 
 						</p>
 					</div>
-					<div class="col-md-1 offset-md-6">
-						<p class="blue-right">ASSESMENT</p>
+					<div class="">
+						<p class="blue-left">ASSESMENT</p>
 					</div>
 				</div>
 				</div>
@@ -128,13 +145,13 @@ tilpasse os i takt med de organisationer vi arbejder i. Vi har taget de bedste e
 	<footer>
       <div class="row">
         <div class="col-md-8">
-          <iframe width="100%" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.5933416132607!2d12.589587116273268!3d55.713440080542924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465252ecd43795af%3A0x5066ea20b955bc9!2zS2Fsa2Jyw6ZuZGVyaWzDuGJza2FqIDYsIDIxMDAgS8O4YmVuaGF2biDDmA!5e0!3m2!1sen!2sdk!4v1518277610874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe width="100%" height="350" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.5933416132607!2d12.589587116273268!3d55.713440080542924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465252ecd43795af%3A0x5066ea20b955bc9!2zS2Fsa2Jyw6ZuZGVyaWzDuGJza2FqIDYsIDIxMDAgS8O4YmVuaGF2biDDmA!5e0!3m2!1sen!2sdk!4v1518277610874" width="600" height="450" frameborder="0" style="border:0" allowfullscreen style="border:0" class="map"></iframe>
       </div>
       
         <div class="col-md-4">
           <br/>
-        <h2>Momentum Consulting</h2>
         <address>
+          <b>Momentum Consulting</b><br/>
           Kalkbrænderiløbskaj 6<br>
           2100 København Ø<br>
           Tlf. 39 40 39 88<br>

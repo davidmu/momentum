@@ -19,19 +19,41 @@ header{
 	min-height: 80px;
 
 }
+.justify {
+    text-align:justify;
+    text-justify:inter-word;
+}
 .menu ul{
 	list-style-type:none;
 	float: right;
 	height: 60px;
 }
-.menu ul li{
-	float: left;
-	font-size: 16px;
+.navbar-nav {
+    float: right;
+    right: 0;
+    position: absolute;
+    top: 0px;
+}
+.navbar-toggler{
+	right:0;
+}
+.nav-content{
+	float: right;
+}    
+.nav-item a.nav-link {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    font-size: 16px;
 	height: 40px;
 	font-family: Questrial;
 	margin-top: 50px;
 	min-width: 60px;
 	padding: 0 20px;
+	color: #6699cc !important;
+}
+nav .nav-item{
+	float: left;
+	
 }
 .menu ul li.first{
 	border: none;
@@ -42,41 +64,43 @@ header{
 	display: block;
 }
 .video{
-	position: absolute;
 	width: 100%;
 	padding: 0;
-	min-height: 500px;
+	height: auto;
 }
 .video-container{
-	width: 100%;
 	padding: 0;
-	min-height: 500px;
 	position: relative;
 	max-height: 800px;
-	height: 80%;
 	overflow: hidden;
 }
 #blueSection{
 	background: #1c2e3b;
 }
+#blueSection h4{
+
+}
 #section2{
-	background-image: url("/img/front1.jpg");
+	background-image: url("/img/front2.jpg");
 }
 h4.white-text{
-	margin: 70px 80px;
+	margin: 70px auto;
 	font-size: 22px;
 	font-weight: 400;
-	font-family: verdana;
 	color: white;
-	text-align: center;
+    text-align:justify;
+
+    text-justify:inter-word;
+    text-align-last: center;
 }
 h4.blue-text{
 	font-size: 25px;
 	font-weight: 400;
-	font-family: verdana;
 	color: #38546d;
-	text-align: center;
-	max-width: 600px;
+    text-align:justify;
+    text-justify:inter-word;
+    text-align-last: center;
+
 	margin: 0 auto 100px;
 }
 a.btn-more{
@@ -88,25 +112,24 @@ a.btn-more{
     display: block;
 }
 #section1{
-	background-image: url("/img/front2.jpg");
+	background-image: url("/img/_84I1238.jpg");
 }
 .sectionFront{
-	font-family: open Sans;
 	background-repeat: no-repeat;
 	padding: 40px 5px;
 	background-size: cover;
 	max-height: 800px;
 }
 #section3{
-	background-image: url("/img/front3.png");
+	background-image: url("/img/front3.jpg");
 }
 .title{
-	font-size: 50px;
-	font-family: verdana;
-	font-weight: bold;
-	margin: 140px auto 80px;
-	display: block;
-    text-align: center
+    font-size: 75px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    color: #466789;
+    font-weight: bold;
 }
 .movieBtn{	
 	padding: 10px 50px;
@@ -227,14 +250,8 @@ div.third{
 .ill-container.assesment{
 	background-image: url("/img/assesment.jpg");
 }
-.ill-container.assesment h1{
-	width: 340px;
-}
 .ill-container.udvikling{
 	background-image: url("/img/_84I1396-sh.jpg");
-}
-.ill-container.udvikling h1{
-	width: 290px;
 }
 .section1 img{
 	width: 300px;
@@ -254,17 +271,12 @@ div.third{
 	color: #fff;
 }
 .ill-container h1{
-	margin: 200px auto;
-	text-align: center;
-	display: block;
-	font-size: 50px;
-	width: 200px;
-	font-family: verdana;
-	font-weight: bold;
-	display: block;
-    text-align: center;
-	background: #fff;
-	opacity: 0.6;
+	font-size: 120px;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    color: #466789;
+    font-weight: bold;
 }
 div.centerImage{
 	cursor: pointer;
@@ -294,9 +306,14 @@ div.individualImage{
 	margin-left: 5px;
 }
 #textSection{
-	padding: 40px;
 	font-size: 22px;
 	font-weight: 500;
+	padding: 40px 0;
+}
+#textSection p{
+	text-align:justify;
+    text-justify:inter-word;
+    text-align-last: center;
 }
 .blog-sidebar img{
 	width: 100%;
@@ -311,6 +328,9 @@ div.individualImage{
 .text-section h2 {
 	color: #6699cc;
 }
+.cases .text-section h2{
+	margin-top:100px;
+}
 .text-section p{
 	font-size: 20px;
 	font-family: open sans;
@@ -322,10 +342,16 @@ div.individualImage{
 
 }
 footer{
-	background: #a99b91;
+	background: #dac9bd;
 }
 footer address{
+	padding: 20px;
 	font-size: 20px;
+	margin: 0 auto;
+    width: 300px;
+}
+footer address a{
+	color: blue;
 }
 .team{
     padding:75px 0;
@@ -423,4 +449,42 @@ a:hover{
 }
 i.red{
     color:#BC0213;
+}
+#quickhitbox h4{
+	color: #49859d;
+	font-weight: bold;
+	margin: 140px 20px;
+	text-align: center;
+	background: #fff;
+	opacity: 0.7;
+}
+#quickhitbox div{
+	border: solid 1px #908e8e;
+}
+.one{
+	background-image: url("/img/_84I1357-sh.jpg");
+	background-size: cover;
+}
+.two{
+	background-image: url("/img/_84I1361-sh.jpg");
+	background-size: cover;
+}
+.three{
+	background-image: url("/img/_84I1238-sh.jpg");
+	background-size: cover;
+}
+.four{
+	background-image: url("/img/_84I1396-sh.jpg");
+	background-size: cover;
+}
+.five{
+	background-image: url("/img/_84I1382-sh.jpg");
+	background-size: cover;
+}
+.map {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
