@@ -118,7 +118,7 @@ a.btn-more{
 	background-repeat: no-repeat;
 	padding: 40px 5px;
 	background-size: cover;
-	max-height: 800px;
+	max-height: 850px;
 }
 #section3{
 	background-image: url("/img/front3.jpg");
@@ -148,7 +148,7 @@ a.btn-more{
 	color: #fff;
 }
 .text{
-	margin-top: 80px;
+	margin-top: 40px;
 	padding: 20px;
 	background: #b9bcbe;
 	opacity: 0.8;
@@ -342,7 +342,7 @@ div.individualImage{
 
 }
 footer{
-	background: #dac9bd;
+	background: #f2f2f2;
 }
 footer address{
 	padding: 20px;

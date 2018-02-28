@@ -3,9 +3,16 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald|Questrial|Roboto|Work+Sans:300,400,500,600,700,800,900" rel="stylesheet">
 		<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="/style.css" rel="stylesheet">
-		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>		
+		<script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
+				if($(document).width()>1000){
+					$.stellar({
+                		horizontalScrolling: false,
+                		verticalOffset: 0
+            		});
+				}
 				console.log("DOCUMENT IS READY");
 				$('.step1').click(function(){
 					$('.active').removeClass('active');
@@ -96,6 +103,7 @@
 				</div>
 			</div>
 		</div>
+		
 		<div class="row text-section">
       <div class="blog-post col-md-10 mx-auto" id="cen">
             <h2 class="blog-post-title">Centrale HR-profiler til medicinalvirksomhed</h2>
@@ -128,6 +136,11 @@ udnævnt til Vice President med overordnet ansvar for al HR.</p>
 			<p>”En vellykket search-proces som har vist sig at være langtidsholdbar.”</p>
       </div><!-- /.blog-post -->
     </div>
+    <div class="row">
+      <div class="col-md-12 paralax">
+        <img src="/img/_84I1173.jpg" data-stellar-ratio="0.5" data-stellar-horizontal-offset="-200"/>
+      </div>
+    </div>
     <div class="row text-section" id="fin">
       <div class="blog-post col-md-10 mx-auto">
             <h2 class="blog-post-title">Finance Manager til Private Equity virksomhed
@@ -152,6 +165,11 @@ succesfuld integration af sin nye Finance Manager.</p>
 <p>CFO’en var yderst tilfreds med Momentums leverance, og han har i forbindelse med et personligt jobskifte
 valgt at fortsætte samarbejdet med Momentum Consulting.</p>
       </div><!-- /.blog-post -->
+    </div>
+    <div class="row">
+      <div class="col-md-12 paralax">
+        <img src="/img/_84I1301.jpg" data-stellar-ratio="0.5" data-stellar-horizontal-offset="-800"/>
+      </div>
     </div>
     <div class="row text-section" id="gen">
       <div class="blog-post col-md-10 mx-auto">
@@ -196,7 +214,11 @@ markeder, samtidig med at man har fået en velfungerende ledelse, der har skabt 
 ro i de to salgsteams.</p>
       </div><!-- /.blog-post -->
     </div>
-
+    <div class="row">
+      <div class="col-md-12 paralax">
+        <img src="/img/_84I1205.jpg" data-stellar-ratio="0.5" data-stellar-horizontal-offset="-200"/>
+      </div>
+    </div>
 	<footer>
       <div class="row">
         <div class="col-md-8">
