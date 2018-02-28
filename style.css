@@ -315,6 +315,7 @@ div.individualImage{
 	text-align:justify;
     text-justify:inter-word;
     text-align-last: center;
+    padding: 5px 20px;
 }
 .blog-sidebar img{
 	width: 100%;
