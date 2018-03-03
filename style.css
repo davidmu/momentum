@@ -11,6 +11,11 @@ header{
 	border-bottom: 2px solid #6699cc;
 	top:0;
 }
+.AssetContainer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
 .logo{
 	max-width: 150px;
 	float: left;
@@ -117,7 +122,7 @@ a.btn-more{
 .sectionFront{
 	background-repeat: no-repeat;
 	padding: 40px 5px;
-	background-size: cover;
+	background-size: 120%;
 	max-height: 850px;
 }
 #section3{
@@ -178,8 +183,8 @@ a.btn-more{
     z-index: 100;
 }
 video{
-	min-height: 500px;
 	top:80px;
+	display: block;
 }
 .trans-container{
 	background: #f5f5f5;
@@ -211,8 +216,12 @@ div.third{
 	font-weight: bold;
 }
 .process{
-	background: #88b1cb;
+	background: #a9b4bb;
 	padding: 40px;
+	border-bottom: 1px solid #000;
+}
+#processDescription{
+	height: 300px;
 }
 #processDescription div{
 	background: #fff;
@@ -225,13 +234,10 @@ div.third{
 	max-height: 300px;
 	min-height: auto;
 	padding: 20px;
-	border-radius: 10px;
-	transition-property: all;
-	transition-duration: 10s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1)
 }
 #processDescription div{
-
+	min-height: 200px;
+	display: none;
 }
 .blue-left{
 	font-size: 120px;
@@ -249,7 +255,7 @@ div.third{
   	background-image: url("/img/_84I1382-sh.jpg");
 }
 .ill-container.assesment{
-	background-image: url("/img/assesment.jpg");
+	background-image: url("/img/_84I1126.jpg");
 }
 .ill-container.udvikling{
 	background-image: url("/img/_84I1396-sh.jpg");
@@ -258,7 +264,6 @@ div.third{
 	width: 300px;
 }
 .circle {
-	background: #c1c0c0;
 	border-radius:20px;
 	margin: 0 auto;
     display: block;
@@ -266,10 +271,16 @@ div.third{
     padding: 5px;
     text-align: center;
     cursor: pointer;
+    height: 10px;
+    font-weight: bold;
+}
+.circle:hover{
+	font-size: 21px;
+	font-weight: bold;
 }
 .circle.active{
-	background: #000;
 	color: #fff;
+	font-weight: bold;
 }
 .ill-container h1{
 	font-size: 120px;
@@ -321,7 +332,7 @@ div.individualImage{
 	width: 100%;
 }
 .text-section{
-	padding: 75px 50px;
+	padding: 50px;
 	border-top: 1px solid #d5d5d5;
 	background: #FFF;
 	margin-bottom: 50px;
@@ -456,11 +467,17 @@ i.red{
 	font-weight: bold;
 	margin: 140px 20px;
 	text-align: center;
-	background: #fff;
 	opacity: 0.7;
 }
+#quickhitbox h4:hover{
+	opacity: 1;
+}
+#quickhitbox{
+	margin-top: 160px;
+}
 #quickhitbox div{
-	border: solid 1px #908e8e;
+	border: solid 1px #dcdcdc;
+	    background: #f5f5f5;
 }
 .one{
 	background-image: url("/img/_84I1357-sh.jpg");
@@ -507,6 +524,10 @@ i.red{
     background-size: 50px;
     background-position: left center;
 }
+.floatinglink:hover{
+	font-weight: bold;
+	color: #548dc5;
+}
 .paralax{
 	height: 400px;
 	overflow: hidden;
@@ -516,11 +537,29 @@ i.red{
 	width: 100%;
 	z-index: 0;
 }
+.blog-post-title{
+	margin-top: 50px;
+}
+@media  (max-width: 1300px) {
+	#blueSection h4 {
+    	width: 735px;
+    }
+   	#textSection p{
+   		font-size: 19px;
+   		width: 735px;
+   		margin: 0 auto;
+   	}
+}
 @media  (max-width: 1200px) {
     .title{
     	font-size: 60px;
     	margin: 0 auto;
     }
+}
+@media (max-width: 1000px){
+	.sectionFront{
+		background-size: cover;
+	}
 }
 @media  (max-width: 900px) {
     .title{
@@ -542,5 +581,8 @@ i.red{
 	}
 	.blue-left{
 		font-size: 80px;
+	}
+	#blueSection h4 {
+		width: 573px;
 	}
 }
