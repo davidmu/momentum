@@ -555,8 +555,11 @@ i.red{
     	font-size: 60px;
     	margin: 0 auto;
     }
+    .sectionFront{
+		background-size: 130%;
+	}
 }
-@media (max-width: 1000px){
+@media (max-width: 900px){
 	.sectionFront{
 		background-size: cover;
 	}
