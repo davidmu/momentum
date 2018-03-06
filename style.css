@@ -3,13 +3,14 @@ body{
 }
 header{
 	box-shadow: 1px 1px #888888;
-	position: fixed !important;
+	position: absolute;
 	z-index: 200;
 	max-height: 80px;
 	background: #fff;
 	opacity: 1;
 	border-bottom: 2px solid #6699cc;
 	top:0;
+	background: transparent;
 }
 .AssetContainer{
 	position: absolute;
@@ -457,7 +458,6 @@ a{
 }
 a:hover{
     text-decoration:none;
-    color:#519548;
 }
 i.red{
     color:#BC0213;
@@ -545,7 +545,7 @@ i.red{
     	width: 735px;
     }
    	#textSection p{
-   		font-size: 19px;
+   		font-size: 18px;
    		width: 735px;
    		margin: 0 auto;
    	}
