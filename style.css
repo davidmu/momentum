@@ -1,5 +1,5 @@
 body{
-	font-family: open sans;
+	font-family: Catamaran, Cormorant Garamond, Abel, Amiri;
 }
 header{
 	box-shadow: 1px 1px #888888;
@@ -12,10 +12,23 @@ header{
 	top:0;
 	background: transparent;
 }
+#peter{
+	margin-top: 50px;
+}
+.FrontAssetContainer{
+}
+.FrontAssetContainer h1{
+	margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
 .AssetContainer{
 	position: absolute;
 	width: 100%;
 	bottom: 0;
+}
+.team .blog-post-title{
+	margin-top: 0px;
 }
 .logo{
 	max-width: 150px;
@@ -91,21 +104,17 @@ nav .nav-item{
 }
 h4.white-text{
 	margin: 70px auto;
-	font-size: 22px;
+	font-size: 19px;
 	font-weight: 400;
 	color: white;
-    text-align:justify;
+    text-align:center;
     padding: 5px 20px;
-    text-justify:inter-word;
-    text-align-last: center;
 }
 h4.blue-text{
 	font-size: 25px;
 	font-weight: 400;
 	color: #38546d;
-    text-align:justify;
-    text-justify:inter-word;
-    text-align-last: center;
+    text-align:center;
 	margin: 0 auto 100px;
 	padding: 5px 20px
 }
@@ -120,20 +129,22 @@ a.btn-more{
 #section1{
 	background-image: url("/img/_84I1238.jpg");
 }
+.search-title{
+	margin: 50px auto;
+	font-size: 75px;
+    color: #466789;
+    font-weight: bold;
+}
 .sectionFront{
 	background-repeat: no-repeat;
-	padding: 40px 5px;
-	background-size: 120%;
 	max-height: 850px;
 }
 #section3{
 	background-image: url("/img/front3.jpg");
+	background-position: -278px -30px;
 }
 .title{
     font-size: 75px;
-    position: absolute;
-    right: 8.333%;
-    bottom: 0px;
     color: #466789;
     font-weight: bold;
 }
@@ -154,11 +165,8 @@ a.btn-more{
 	color: #fff;
 }
 .text{
-	margin-top: 40px;
 	padding: 20px;
-	background: #b9bcbe;
-	opacity: 0.8;
-	margin-bottom: 100px;
+	background: #fff;
 	z-index: 2;
 }
 .line{
@@ -167,12 +175,10 @@ a.btn-more{
 }
 .text h5{
 	font-size: 48px;
-	font-family: verdana;
 }
 .text p{
 	font-size: 18px;
 	font-weight: 500;
-	font-family: verdana;
 }
 .image img{
 	width: 100%;
@@ -261,6 +267,16 @@ div.third{
 .ill-container.udvikling{
 	background-image: url("/img/_84I1396-sh.jpg");
 }
+.ill-container.cases{
+	background-image: url("/img/_84I1212.jpg");
+}
+.processIll img{
+	max-height: 400px;
+}
+.processList{
+	margin-top: 44px;
+    font-size: 21px;
+}
 .section1 img{
 	width: 300px;
 }
@@ -319,14 +335,12 @@ div.individualImage{
 	margin-left: 5px;
 }
 #textSection{
-	font-size: 22px;
+	font-size: 19px;
 	font-weight: 500;
 	padding: 40px 0;
 }
 #textSection p{
-	text-align:justify;
-    text-justify:inter-word;
-    text-align-last: center;
+	text-align: center;
     padding: 5px 20px;
 }
 .blog-sidebar img{
@@ -346,13 +360,9 @@ div.individualImage{
 }
 .text-section p{
 	font-size: 20px;
-	font-family: open sans;
-
 }
 .text-section li{
 	font-size: 20px;
-	font-family: open sans;
-
 }
 footer{
 	background: #f2f2f2;
@@ -380,9 +390,13 @@ h6.description{
 	margin-top: 25px;
 }
 .profile h1{
-	font-weight: normal;
-	font-size: 20px;
-	margin:10px 0 0 0;
+    font-weight: normal;
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    display: none;
 }
 .profile h2{
 	font-size: 14px;
@@ -448,6 +462,10 @@ h6.description{
 	-webkit-transition: all 0.3s ease-in-out 0s;
 	-moz-transition: all 0.3s ease-in-out 0s;
 	transition: all 0.3s ease-in-out 0s;
+}
+.img-box:hover h1{
+	display: block;
+	z-index: 200;
 }
 .img-box a:hover li{
 	border-color: #fff;
@@ -536,6 +554,9 @@ i.red{
 	position: absolute;
 	width: 100%;
 	z-index: 0;
+}
+.filler{
+	min-height: 500px;
 }
 .blog-post-title{
 	margin-top: 50px;
