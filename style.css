@@ -255,6 +255,10 @@ div.third{
 	background-size: cover;
   	background-image: url("/img/_84I1382-sh.jpg");
 }
+.ill-container.front{
+	background-image: url("/img/_84I1350.jpg");
+	background-position-y: -90px;
+}
 .ill-container.assesment{
 	background-image: url("/img/_84I1126.jpg");
 }
