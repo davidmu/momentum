@@ -270,8 +270,13 @@ div.third{
 	background-size: cover;
   	background-image: url("/img/search.jpg");
 }
+.ill-container.front{
+	background-image: url("/img/_84I1350.jpg");
+	background-position-y: -180px;
+}
 .ill-container.assesment{
 	background-image: url("/img/_84I1126.jpg");
+	background-position-y: -90px;
 }
 .ill-container.udvikling{
 	background-image: url("/img/_84I1168.jpg");
@@ -592,6 +597,10 @@ i.red{
    		width: 735px;
    		margin: 0 auto;
    	}
+   	.ill-container.front {
+    	background-image: url(/img/_84I1350.jpg);
+    	background-position-y: -90px;
+	}
 }
 @media  (max-width: 1200px) {
     .title{
@@ -618,6 +627,13 @@ i.red{
 	}
 }
 @media  (max-width: 900px) {
+	.ill-container.assesment{
+		background-position-y: 0;
+	}
+		.ill-container.front {
+    	background-image: url(/img/_84I1350.jpg);
+    	background-position-y: 0;
+	}
     .title{
     	font-size: 40px;
     	margin: 0 auto;
