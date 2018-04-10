@@ -1,25 +1,14 @@
 <html>
 	<head>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald|Catamaran|Questrial|Roboto|Abel|Work+Sans:300,400,500,600,700,800,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Oswald|Questrial|Catamaran" rel="stylesheet">
 		<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 		<link href="/style.css" rel="stylesheet">
 		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="/bower_components/jquery.stellar/jquery.stellar.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.individualImage').click(function(){
-					$('#assesmentCenter').slideUp();
-					$('#assesment').slideToggle();
-				});
-				$('.centerImage').click(function(){
-					$('#assesment').slideUp();
-					$('#assesmentCenter').slideToggle();
-				});
-          		$.stellar({
-                	horizontalScrolling: false,
-                	verticalOffset: 0
-          		});
-			});
+			if($(document).width()>1000){
+
+				}
 		</script>
 		<meta charset="UTF-8">
 	</head>
@@ -47,10 +36,7 @@
 	<a class="nav-link" href="udvikling.html">Udvikling</a>
 	</li>
 	<li class="nav-item">
-	<a class="nav-link" href="assesment.html">Assesment</a>
-	</li>
-	<li class="nav-item">
-	<a class="nav-link" href="cases.html">Cases</a>
+	<a class="nav-link" href="assesment.html">Assessment</a>
 	</li>
 	<li class="nav-item">
 	<a class="nav-link" href="team.html">Mød Os</a>
@@ -103,7 +89,7 @@ og ved gennemførelse af større processer, såkaldte Assessment Centre.</p>
       </div>
     </div>
 		<div class="row text-section" id="assesment">
-      <div class="blog-post col-md-10 mx-auto">
+      <div class="blog-post col-md-8 mx-auto">
             <h2 class="blog-post-title">Individuel assessment</h2>
 
             <p>Et individuelt assessmentforløb kan anvendes ved rekruttering og udvikling af ledere og
@@ -136,7 +122,7 @@ højeste kvalitetskrav på markedet.</li>
       </div>
     </div>
     <div class="row text-section" id="assesmentCenter">
-      <div class="blog-post col-md-10 mx-auto">
+      <div class="blog-post col-md-8 mx-auto">
       	<h2 class="blog-post-title">Assessment Center</h2>
             <p>Et Assessment Center kan anvendes ved større rekrutteringsprocesser i forbindelse med
 talentvurdering og større udviklingsforløb. Assessment Centeret er et afgørende værktøj i
